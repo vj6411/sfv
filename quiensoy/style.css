@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* clases especiales*/
+.borde{
+	border: 1px ;
+}
+
+/* contenedor*/
+.contenedor{
+	width: 100%;
+	height:auto;
+	background-color: #ffe5d8;
+}
+
+nav{
+	width: 100%;
+	height: 75px;
+	background: #010101;
+	position: fixed;
+	z-index: 1;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	padding: 5px;
+	float: left;
+	background:#010101 ;
+	text-align: center;
+}
+.logo img{
+	width: 35%;
+	height: 90%;
+}
+.navegacion{
+	width: 65%;
+	height: 100%;
+	float: center;
+}
+
+/* nivel 0*/
+nav ul{
+	list-style: none;
+	padding: 10px 100px 100px 0px;
+}
+nav>.navegacion>ul>li,nav>ul>li{
+ 	display: inline-table;
+ }
+  nav ul li{
+ 	width: 120px;
+ 	text-align:center;
+ 	background:#010101;
+ 	float: center;
+ }
+ nav ul li:hover>ul{
+ 	display: block;
+ }
+ nav ul li a{
+ 	display: block;
+ 	padding: 15px 0 14px 0;
+ 	text-decoration: none;
+ 	color: #fff;
+ 	border-bottom: 1px solid #010101;
+ }
+ nav ul li a:hover{
+ 	background-color: #ffe5d8;
+ 	border-bottom: 1px solid #010101;
+ }
+/* nivel 1*/
+nav li ul{
+ 	position: absolute;
+ 	display: none;
+ }
+ nav li ul li{
+ 	position: relative;
+ }
+ header{
+ 	width: 100%;
+ 	height: 850px;
+ 	background-size: 100% 100%;
+ 	background: rgba(255,255,255)
+ }
+ header img{
+  width: 100%;
+  height: 850px;
+ }
+ .lol{
+  width: 250px;
+  height: 250px;
+  border-radius: 60%;
+  position: fixed;
+  z-index: 0;
+ }
+.centrado{
+  position: absolute;
+  top: 35%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+  color:#010101;
+  font-size: 20pt;
+ }
+  .centrado2{
+  position: absolute;
+  top: 80%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+  color:#010101;
+  font-size: 10pt;
+  color: #fff;
+ }
+   .centrado3{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+  color:#010101;
+  font-size: 20pt;
+  color: #fff;
+
+ }
+
+/*Contactenos*/
+  footer#contactenos{
+  width: 100%;
+  height: 25%;
+  background-color:#010101; 
+  float: left;
+  text-align: center;
+ } 
+ .div-contacto p{
+  margin: 10px 10px 10px 20px;
+  text-align: justify;
+  text-align: center;
+  border-top: 5px;
+  color: yellow;
+ }
+ .fab .fa-facebook{
+ 	background-color: yellow;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+ }
+ .fab .fa-twitter{
+ 	background-color: yellow;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+ }
+ .fab .fa-instagram{
+ 	background-color: yellow;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+ }
