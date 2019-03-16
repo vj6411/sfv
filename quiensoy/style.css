@@ -41,52 +41,61 @@ nav{
 	height: 100%;
 	float: center;
 }
-
-/* nivel 0*/
-nav ul{
-	list-style: none;
-	padding: 10px 100px 100px 0px;
+#btn-menu{
+  display: none;
 }
-nav>.navegacion>ul>li,nav>ul>li{
- 	display: inline-table;
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 20px 30px 30px 20px;
+  background-color: #fff;
+}
+/* nivel 0*/
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.menu>.navegacion>ul>li,nav>ul>li{
+  display: inline-table;
  }
-  nav ul li{
- 	width: 120px;
- 	text-align:center;
- 	background:#010101;
- 	float: center;
+  .menu ul li{
+  width: 120px;
+  text-align:center;
+  background:#010101;
+  float: center;
  }
- nav ul li:hover>ul{
- 	display: block;
+ .menu ul li:hover>ul{
+  display: block;
  }
- nav ul li a{
- 	display: block;
- 	padding: 15px 0 14px 0;
- 	text-decoration: none;
- 	color: #fff;
- 	border-bottom: 1px solid #010101;
+ .menu ul li a{
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #010101;
  }
- nav ul li a:hover{
- 	background-color: #ffe5d8;
- 	border-bottom: 1px solid #010101;
+ .menu ul li a:hover{
+  background-color: #ffe5d8;
+  border-bottom: 1px solid #010101;
  }
 /* nivel 1*/
-nav li ul{
- 	position: absolute;
- 	display: none;
+.menu li ul{
+  position: absolute;
+  display: none;
  }
- nav li ul li{
- 	position: relative;
- }
- header{
+ section{
  	width: 100%;
  	height: 850px;
  	background-size: 100% 100%;
  	background: rgba(255,255,255)
  }
- header img{
+ section img{
   width: 100%;
-  height: 850px;
+  height: 100%;
  }
  .lol{
   width: 250px;
@@ -155,4 +164,43 @@ nav li ul{
 	color: #fff;
 	padding: 10px;
 	border-radius: 10px;
+ }
+  @media (max-width: 1320px){
+  header {
+    height: 55px;
+    background: #010101;
+  }
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #ffe5d8;
+    width: 30%;
+    margin-left: -100%;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu ul li {
+    width: 100%;
+  }
+  .menu li ul{
+    width: 70%;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .logo{
+    display: none;
+  }
+  .logo img{
+    display: none;
+  }
+  .navegacion{
+    width: 100%;
+  }
  }
